@@ -1,4 +1,4 @@
-# OPTIONS
+# OPTIONS #
 # ======= #
 
 $vagrant_box = "ubuntu/trusty64"
