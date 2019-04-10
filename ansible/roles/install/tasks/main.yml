@@ -1,4 +1,9 @@
 - name: install package(s)
-  package: 
-    name: "{{packages}}"
-    state: latest 
+  apt:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+    - vim
+    - git
+    - screen
