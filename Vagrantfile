@@ -2,6 +2,7 @@
 $vagrant_box = "ubuntu/trusty64"
 $guest_port = 5000
 $host_port = 5000
+$ansible_verbose = true
 
 Vagrant.configure("2") do |config|
 
@@ -10,7 +11,7 @@ Vagrant.configure("2") do |config|
 
     config.vm.provision "ansible_local" do |ansible|
         ansible.playbook = "ansible/provision.yml"
-        #ansible.verbose = true
+        #ansible.verbose = ansible_verbose
     end
 
 end
